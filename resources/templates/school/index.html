@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>[COMPANY-NAME]</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="phpcrm-top" style="background-color:#000;color:#fff" id="phpcrmTop">
+
+
+   <a class="phpcrm-bar-item phpcrm-button phpcrm-hover-black phpcrm-hide-medium phpcrm-hide-large phpcrm-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+  <div class="phpcrm-navbar" id="myNavbar">
+
+  
+ 
+	
+    <a href="[URL]#home" >HOME</a>
+    <a href="[URL]#about">ABOUT</a>
+    <a href="[URL]#services">SERVICES</a>
+   <div class="dropdown">
+    <button class="dropbtn">CONTACT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="[URL]#booking_form">COURSE REGISTRATION</a>
+	<a href="[URL]#contact">OTHERS</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown-right" style="float:right;">
+  
+  
+    <button class="dropbtn"><i class="fa fa-user"></i> CUSTOMER 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content-right">
+<a onclick="document.getElementById('login1').style.display='block'" style="cursor: pointer;">Login</a>
+<a onclick="document.getElementById('register1').style.display='block'" style="cursor: pointer;">Register</a>
+    </div>
+  </div> 
+  <a href="[STAFF-LOGIN]" style="float:right;" target="_blank">STAFF LOGIN</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobile_menu" class="phpcrm-bar-block phpcrm-white phpcrm-hide phpcrm-hide-large phpcrm-hide-medium">
+
+
+	
+    <a href="[URL]#home"class="phpcrm-bar-item phpcrm-button" onclick="toggleFunction()" >HOME</a>
+    <a href="[URL]#about" class="phpcrm-bar-item phpcrm-button" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="[URL]#services" class="phpcrm-bar-item phpcrm-button" onclick="toggleFunction()"><i class="fa fa-th"></i> SERVICES</a>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-envelope"></i> CONTACT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="[URL]#booking_form">COURSE REGISTRATION</a>
+     <a href="[URL]#contact">OTHERS</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown-right" style="float:right;">
+  
+  
+    <button class="dropbtn"><i class="fa fa-user"></i> CUSTOMER 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content-right">
+<a onclick="document.getElementById('login1').style.display='block'" style="cursor: pointer;">Login</a>
+<a onclick="document.getElementById('register1').style.display='block'" style="cursor: pointer;">Register</a>
+    </div>
+  </div> 
+  <a href="[STAFF-LOGIN]" style="float:right;" target="_blank">STAFF LOGIN</a>
+
+
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 phpcrm-display-container phpcrm-opacity-min" id="home">
+  <div class="phpcrm-display-middle" style="white-space:nowrap;">
+   [COMPANY-LOGO]
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="phpcrm-content phpcrm-container phpcrm-padding-64" id="about">
+  <h3 class="phpcrm-center">ABOUT COMPANY</h3>
+  <p class="phpcrm-center"><em>Turning Dreams into Addresses</em></p>
+  <p>This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template. This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template.</p>
+<p>
+This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template.This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template.</p>
+<p>
+This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template.</p>
+
+  <div class="phpcrm-row">
+    <div class="phpcrm-col m6 phpcrm-center phpcrm-padding-large">
+   
+      <img src="images/about.png" class="phpcrm-round phpcrm-image phpcrm-opacity phpcrm-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="phpcrm-col m6 phpcrm-hide-small phpcrm-padding-large">
+      <p>This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template. This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="phpcrm-row phpcrm-center phpcrm-dark-grey phpcrm-padding-16">
+  <div class="phpcrm-quarter phpcrm-section">
+    <span class="phpcrm-xlarge">99+</span><br>
+    Partners
+  </div>
+  <div class="phpcrm-quarter phpcrm-section">
+    <span class="phpcrm-xlarge">999+</span><br>
+    Projects Done
+  </div>
+  <div class="phpcrm-quarter phpcrm-section">
+    <span class="phpcrm-xlarge">99%</span><br>
+    Happy Clients
+  </div>
+  <div class="phpcrm-quarter phpcrm-section">
+    <span class="phpcrm-xlarge">1000+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 phpcrm-display-container phpcrm-opacity-min">
+  <div class="phpcrm-display-middle">
+    <span class="phpcrm-xxlarge phpcrm-text-white phpcrm-wide">SERVICES</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="phpcrm-content phpcrm-container phpcrm-padding-64" id="services">
+  <h3 class="phpcrm-center">SERVICES</h3>
+  <p class="phpcrm-center"><em>This is sample text for demo purposes. You can edit this HTML template under Resources/Templates/Template_Folder_Name, and you can select your template in Admin Setup -> Company -> Customer Template.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="phpcrm-row-padding phpcrm-center">
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+  </div>
+
+  <div class="phpcrm-row-padding phpcrm-center phpcrm-section">
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+
+    <div class="phpcrm-col m3">
+      <img src="images/img1.jpg" style="width:100%"  class="phpcrm-hover-opacity" alt="PHP CRM">
+    </div>
+    <button class="phpcrm-button phpcrm-padding-large phpcrm-light-grey" style="margin-top:64px">VIEW MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="phpcrm-modal phpcrm-black" onclick="this.style.display='none'">
+  <span class="phpcrm-button phpcrm-large phpcrm-black phpcrm-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="phpcrm-modal-content phpcrm-animate-zoom phpcrm-center phpcrm-transparent phpcrm-padding-64">
+    <img id="img01" class="phpcrm-image">
+    <p id="caption" class="phpcrm-opacity phpcrm-large"></p>
+  </div>
+</div>
+
+
+
+
+<!-- Third Parallax Image with BOOK APPOINTMENT Text -->
+<div class="bgimg-3 phpcrm-display-container phpcrm-opacity-min">
+  <div class="phpcrm-display-middle">
+     <span class="phpcrm-xxlarge phpcrm-text-white phpcrm-wide">COURSE REGISTRATION</span>
+  </div>
+</div>
+
+<!-- Container COURSE -->
+<form action="#" method="post">
+    <div class="phpcrm-content phpcrm-container phpcrm-padding-64" id="booking_form">
+        <h3 class="phpcrm-center">Course Registration</h3>
+
+        <div class="phpcrm-row">
+            <div class="phpcrm-col m6 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="studentName">Student Name:</label><br>
+                    <input class="phpcrm-input phpcrm-border" type="text" id="studentName" name="studentName" required>
+                </div>
+            </div>
+            <div class="phpcrm-col m6 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="fatherName">Father's Name:</label><br>
+                    <input class="phpcrm-input phpcrm-border" type="text" id="fatherName" name="fatherName" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="phpcrm-row">
+            <div class="phpcrm-col m6 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="email">Email:</label><br>
+                    <input class="phpcrm-input phpcrm-border" type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="phpcrm-col m6 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="phone">Phone:</label><br>
+                    <input class="phpcrm-input phpcrm-border" type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+        </div>
+<div class="phpcrm-row">
+    <div class="phpcrm-col m6 phpcrm-panel">
+        <div class="phpcrm-row-padding">
+            <label for="recentDegree1">Recent Completed Degree 1:</label><br>
+            <input class="phpcrm-input phpcrm-border" type="text" id="recentDegree1" name="recentDegree1" required>
+        </div>
+    </div>
+    <div class="phpcrm-col m6 phpcrm-panel">
+        <div class="phpcrm-row-padding">
+            <label for="obtainedMarks1">Obtained Marks %/Grade:</label><br>
+            <input class="phpcrm-input phpcrm-border" type="text" id="obtainedMarks1" name="obtainedMarks1" required>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Completed Degree 2 -->
+<div class="phpcrm-row">
+    <div class="phpcrm-col m6 phpcrm-panel">
+        <div class="phpcrm-row-padding">
+            <label for="recentDegree2">Recent Completed Degree 2:</label><br>
+            <input class="phpcrm-input phpcrm-border" type="text" id="recentDegree2" name="recentDegree2" required>
+        </div>
+    </div>
+    <div class="phpcrm-col m6 phpcrm-panel">
+        <div class="phpcrm-row-padding">
+            <label for="obtainedMarks2">Obtained Marks %/Grade:</label><br>
+            <input class="phpcrm-input phpcrm-border" type="text" id="obtainedMarks2" name="obtainedMarks2" required>
+        </div>
+    </div>
+</div>
+        <div class="phpcrm-row">
+            <div class="phpcrm-col m12 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="currentCourse">Current Course Name:</label><br>
+                    <input class="phpcrm-input phpcrm-border" type="text" id="currentCourse" name="currentCourse" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="phpcrm-row">
+            <div class="phpcrm-col m12 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="enrollingIn">Enrolling in Course:</label><br>
+<select class="phpcrm-input phpcrm-border" id="enrollingIn" name="enrollingIn" required>
+    <option value="">Select Course to Enroll</option>
+    
+    <!-- Engineering -->
+    <optgroup label="Engineering">
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Computer Science Engineering">Computer Science Engineering</option>
+        <option value="Aerospace Engineering">Aerospace Engineering</option>
+        <option value="Chemical Engineering">Chemical Engineering</option>
+        <option value="Biomedical Engineering">Biomedical Engineering</option>
+        <option value="Environmental Engineering">Environmental Engineering</option>
+        <option value="Industrial Engineering">Industrial Engineering</option>
+        <option value="Petroleum Engineering">Petroleum Engineering</option>
+    </optgroup>
+    
+    <!-- Medicine -->
+    <optgroup label="Medicine">
+        <option value="MBBS">MBBS (Bachelor of Medicine, Bachelor of Surgery)</option>
+        <option value="BDS">BDS (Bachelor of Dental Surgery)</option>
+        <option value="Ayurveda">Ayurveda</option>
+        <option value="Homeopathy">Homeopathy</option>
+        <option value="Naturopathy">Naturopathy</option>
+        <option value="Unani">Unani</option>
+        <option value="Veterinary Medicine">Veterinary Medicine</option>
+        <option value="Physiotherapy">Physiotherapy</option>
+        <option value="Nursing">Nursing</option>
+        <option value="Optometry">Optometry</option>
+    </optgroup>
+    
+    <!-- Dentistry -->
+    <optgroup label="Dentistry">
+        <option value="General Dentistry">General Dentistry</option>
+        <option value="Orthodontics">Orthodontics</option>
+        <option value="Endodontics">Endodontics</option>
+        <option value="Periodontics">Periodontics</option>
+        <option value="Prosthodontics">Prosthodontics</option>
+        <option value="Oral and Maxillofacial Surgery">Oral and Maxillofacial Surgery</option>
+        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+        <option value="Dental Hygiene">Dental Hygiene</option>
+        <option value="Oral Pathology">Oral Pathology</option>
+        <option value="Forensic Odontology">Forensic Odontology</option>
+    </optgroup>
+    
+    <!-- Pharmacy -->
+    <optgroup label="Pharmacy">
+        <option value="B.Pharm">Bachelor of Pharmacy (B.Pharm)</option>
+        <option value="Pharm.D">Pharm.D (Doctor of Pharmacy)</option>
+        <option value="Pharmaceutical Sciences">Pharmaceutical Sciences</option>
+        <option value="Pharmacology">Pharmacology</option>
+        <option value="Pharmaceutical Chemistry">Pharmaceutical Chemistry</option>
+        <option value="Pharmacognosy">Pharmacognosy</option>
+        <option value="Clinical Pharmacy">Clinical Pharmacy</option>
+        <option value="Hospital Pharmacy">Hospital Pharmacy</option>
+        <option value="Industrial Pharmacy">Industrial Pharmacy</option>
+        <option value="Regulatory Affairs">Regulatory Affairs</option>
+    </optgroup>
+    
+    <!-- Architecture -->
+    <optgroup label="Architecture">
+        <option value="Urban Design">Urban Design</option>
+        <option value="Landscape Architecture">Landscape Architecture</option>
+        <option value="Interior Design">Interior Design</option>
+        <option value="Sustainable Architecture">Sustainable Architecture</option>
+        <option value="Historic Preservation">Historic Preservation</option>
+        <option value="Building Technology">Building Technology</option>
+        <option value="Urban Planning">Urban Planning</option>
+        <option value="Architectural Conservation">Architectural Conservation</option>
+        <option value="Transportation Planning">Transportation Planning</option>
+        <option value="Construction Management">Construction Management</option>
+    </optgroup>
+    
+    <!-- Law -->
+    <optgroup label="Law">
+        <option value="Criminal Law">Criminal Law</option>
+        <option value="Civil Law">Civil Law</option>
+        <option value="Corporate Law">Corporate Law</option>
+        <option value="Constitutional Law">Constitutional Law</option>
+        <option value="International Law">International Law</option>
+        <option value="Intellectual Property Law">Intellectual Property Law</option>
+        <option value="Environmental Law">Environmental Law</option>
+        <option value="Tax Law">Tax Law</option>
+        <option value="Family Law">Family Law</option>
+        <option value="Labor Law">Labor Law</option>
+    </optgroup>
+    
+    <!-- Commerce and Business Administration -->
+    <optgroup label="Commerce and Business Administration">
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Human Resource Management">Human Resource Management</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Supply Chain Management">Supply Chain Management</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="International Business">International Business</option>
+        <option value="Information Systems Management">Information Systems Management</option>
+        <option value="Economics">Economics</option>
+        <option value="Business Analytics">Business Analytics</option>
+    </optgroup>
+    
+    <!-- Fine Arts -->
+    <optgroup label="Fine Arts">
+        <option value="Painting">Painting</option>
+        <option value="Sculpture">Sculpture</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Illustration">Illustration</option>
+        <option value="Photography">Photography</option>
+        <option value="Film and Video">Film and Video</option>
+        <option value="Performing Arts">Performing Arts</option>
+        <option value="Visual Communication">Visual Communication</option>
+        <option value="Art History">Art History</option>
+        <option value="Digital Arts">Digital Arts</option>
+    </optgroup>
+    
+    <!-- Add more professional courses and subcategories as needed -->
+</select>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="phpcrm-row">
+            <div class="phpcrm-col m12 phpcrm-panel">
+                <div class="phpcrm-row-padding">
+                    <label for="comments">Comments:</label><br>
+                    <textarea class="phpcrm-input phpcrm-border" id="comments" name="comments" style="height:200px;"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <button class="phpcrm-button phpcrm-black phpcrm-center phpcrm-section" type="submit">
+                Register
+            </button>
+        </center>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+<!-- COURSE END -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Forth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 phpcrm-display-container phpcrm-opacity-min">
+  <div class="phpcrm-display-middle">
+     <span class="phpcrm-xxlarge phpcrm-text-white phpcrm-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="phpcrm-content phpcrm-container phpcrm-padding-64" id="contact">
+  <h3 class="phpcrm-center">Reach US</h3>
+  <p class="phpcrm-center"><em>Feel free to reach out if you have any questions or need assistance.</em></p>
+
+  <div class="phpcrm-row phpcrm-padding-32 phpcrm-section">
+    <div class="phpcrm-col m4 phpcrm-container">
+      <img src="images/company.png" class="phpcrm-image phpcrm-round" style="width:100%">
+    </div>
+    <div class="phpcrm-col m8 phpcrm-panel">
+      <div class="phpcrm-large phpcrm-margin-bottom">
+        <i class="fa fa-map-marker fa-fw phpcrm-hover-text-black phpcrm-xlarge phpcrm-margin-right"></i> Your Company, India<br>
+        <i class="fa fa-phone fa-fw phpcrm-hover-text-black phpcrm-xlarge phpcrm-margin-right"></i> Phone: +91-11-1111-1111<br>
+        <i class="fa fa-envelope fa-fw phpcrm-hover-text-black phpcrm-xlarge phpcrm-margin-right"></i> Email: info@yourcompany.com<br>
+      </div>
+      <form action="[FORM-URL]"  method="post" >
+        <div class="phpcrm-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="phpcrm-half">
+            <input class="phpcrm-input phpcrm-border" type="text" placeholder="Name" required name="name">
+          </div>
+          <div class="phpcrm-half">
+            <input class="phpcrm-input phpcrm-border" type="text" placeholder="Email" required name="email">
+          </div>
+        </div>
+        <input class="phpcrm-input phpcrm-border" type="text" placeholder="Message" required name="Message">
+        <button class="phpcrm-button phpcrm-black phpcrm-right phpcrm-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="phpcrm-center phpcrm-black phpcrm-padding-64 phpcrm-opacity phpcrm-hover-opacity-off">
+  <a href="[URL]#home" class="phpcrm-button phpcrm-light-grey"><i class="fa fa-arrow-up phpcrm-margin-right"></i>To the top</a>
+  <div class="phpcrm-xlarge phpcrm-section">
+    <i class="fa fa-facebook-official phpcrm-hover-opacity"></i>
+    <i class="fa fa-instagram phpcrm-hover-opacity"></i>
+    <i class="fa fa-snapchat phpcrm-hover-opacity"></i>
+    <i class="fa fa-pinterest-p phpcrm-hover-opacity"></i>
+    <i class="fa fa-twitter phpcrm-hover-opacity"></i>
+    <i class="fa fa-linkedin phpcrm-hover-opacity"></i>
+  </div>
+  <p>Developed by <a href="https://www.phpcrm.com" title="Realestate HTML Website Template" target="_blank" class="phpcrm-hover-text-green">www.phpcrm.com</a></p>
+</footer>
+ 
+
+
+</body>
+</html>

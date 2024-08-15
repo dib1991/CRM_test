@@ -1,0 +1,466 @@
+/* phpcrm.CSS  */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.phpcrm-serif{font-family:serif}.phpcrm-sans-serif{font-family:sans-serif}.phpcrm-cursive{font-family:cursive}.phpcrm-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.phpcrm-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.phpcrm-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.phpcrm-table,.phpcrm-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.phpcrm-table-all{border:1px solid #ccc}
+.phpcrm-bordered tr,.phpcrm-table-all tr{border-bottom:1px solid #ddd}.phpcrm-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.phpcrm-table-all tr:nth-child(odd){background-color:#fff}.phpcrm-table-all tr:nth-child(even){background-color:#f1f1f1}
+.phpcrm-hoverable tbody tr:hover,.phpcrm-ul.phpcrm-hoverable li:hover{background-color:#ccc}.phpcrm-centered tr th,.phpcrm-centered tr td{text-align:center}
+.phpcrm-table td,.phpcrm-table th,.phpcrm-table-all td,.phpcrm-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.phpcrm-table th:first-child,.phpcrm-table td:first-child,.phpcrm-table-all th:first-child,.phpcrm-table-all td:first-child{padding-left:16px}
+.phpcrm-btn,.phpcrm-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.phpcrm-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.phpcrm-btn,.phpcrm-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.phpcrm-disabled,.phpcrm-btn:disabled,.phpcrm-button:disabled{cursor:not-allowed;opacity:0.3}.phpcrm-disabled *,:disabled *{pointer-events:none}
+.phpcrm-btn.phpcrm-disabled:hover,.phpcrm-btn:disabled:hover{box-shadow:none}
+.phpcrm-badge,.phpcrm-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.phpcrm-badge{border-radius:50%}
+.phpcrm-ul{list-style-type:none;padding:0;margin:0}.phpcrm-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.phpcrm-ul li:last-child{border-bottom:none}
+.phpcrm-tooltip,.phpcrm-display-container{position:relative}.phpcrm-tooltip .phpcrm-text{display:none}.phpcrm-tooltip:hover .phpcrm-text{display:inline-block}
+.phpcrm-ripple:active{opacity:0.8}.phpcrm-ripple{transition:opacity 0s}
+.phpcrm-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.phpcrm-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.phpcrm-dropdown-click,.phpcrm-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.phpcrm-dropdown-hover:hover .phpcrm-dropdown-content{display:block}
+.phpcrm-dropdown-hover:first-child,.phpcrm-dropdown-click:hover{background-color:#ccc;color:#000}
+.phpcrm-dropdown-hover:hover > .phpcrm-button:first-child,.phpcrm-dropdown-click:hover > .phpcrm-button:first-child{background-color:#ccc;color:#000}
+.phpcrm-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.phpcrm-dropdown-content-right {cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1;right:10px;}
+.phpcrm-check,.phpcrm-radio{width:24px;height:24px;position:relative;top:6px}
+.phpcrm-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.phpcrm-main,#main{transition:margin-left .4s}
+.phpcrm-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.phpcrm-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.phpcrm-responsive{display:block;overflow-x:auto}
+.phpcrm-container:after,.phpcrm-container:before,.phpcrm-panel:after,.phpcrm-panel:before,.phpcrm-row:after,.phpcrm-row:before,.phpcrm-row-padding:after,.phpcrm-row-padding:before,
+.phpcrm-cell-row:before,.phpcrm-cell-row:after,.phpcrm-clear:after,.phpcrm-clear:before,.phpcrm-bar:before,.phpcrm-bar:after{content:"";display:table;clear:both}
+.phpcrm-col,.phpcrm-half,.phpcrm-third,.phpcrm-twothird,.phpcrm-threequarter,.phpcrm-quarter{float:left;width:100%}
+.phpcrm-col.s1{width:8.33333%}.phpcrm-col.s2{width:16.66666%}.phpcrm-col.s3{width:24.99999%}.phpcrm-col.s4{width:33.33333%}
+.phpcrm-col.s5{width:41.66666%}.phpcrm-col.s6{width:49.99999%}.phpcrm-col.s7{width:58.33333%}.phpcrm-col.s8{width:66.66666%}
+.phpcrm-col.s9{width:74.99999%}.phpcrm-col.s10{width:83.33333%}.phpcrm-col.s11{width:91.66666%}.phpcrm-col.s12{width:99.99999%}
+@media (min-width:601px){.phpcrm-col.m1{width:8.33333%}.phpcrm-col.m2{width:16.66666%}.phpcrm-col.m3,.phpcrm-quarter{width:24.99999%}.phpcrm-col.m4,.phpcrm-third{width:33.33333%}
+.phpcrm-col.m5{width:41.66666%}.phpcrm-col.m6,.phpcrm-half{width:49.99999%}.phpcrm-col.m7{width:58.33333%}.phpcrm-col.m8,.phpcrm-twothird{width:66.66666%}
+.phpcrm-col.m9,.phpcrm-threequarter{width:74.99999%}.phpcrm-col.m10{width:83.33333%}.phpcrm-col.m11{width:91.66666%}.phpcrm-col.m12{width:99.99999%}}
+@media (min-width:993px){.phpcrm-col.l1{width:8.33333%}.phpcrm-col.l2{width:16.66666%}.phpcrm-col.l3{width:24.99999%}.phpcrm-col.l4{width:33.33333%}
+.phpcrm-col.l5{width:41.66666%}.phpcrm-col.l6{width:49.99999%}.phpcrm-col.l7{width:58.33333%}.phpcrm-col.l8{width:66.66666%}
+.phpcrm-col.l9{width:74.99999%}.phpcrm-col.l10{width:83.33333%}.phpcrm-col.l11{width:91.66666%}.phpcrm-col.l12{width:99.99999%}}
+.phpcrm-rest{overflow:hidden}.phpcrm-stretch{margin-left:-16px;margin-right:-16px}
+.phpcrm-content,.phpcrm-auto{margin-left:auto;margin-right:auto}.phpcrm-content{max-width:980px}.phpcrm-auto{max-width:1140px}
+.phpcrm-cell-row{display:table;width:100%}.phpcrm-cell{display:table-cell}
+.phpcrm-cell-top{vertical-align:top}.phpcrm-cell-middle{vertical-align:middle}.phpcrm-cell-bottom{vertical-align:bottom}
+.phpcrm-hide{display:none!important}.phpcrm-show-block,.phpcrm-show{display:block!important}.phpcrm-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.phpcrm-auto{max-width:95%}}
+@media (max-width:600px){.phpcrm-modal-content{margin:0 10px;width:auto!important}.phpcrm-modal{padding-top:30px}
+.phpcrm-dropdown-hover.phpcrm-mobile .phpcrm-dropdown-content,.phpcrm-dropdown-click.phpcrm-mobile .phpcrm-dropdown-content{position:relative}	
+.phpcrm-hide-small{display:none!important}.phpcrm-mobile{display:block;width:100%!important}.phpcrm-bar-item.phpcrm-mobile,.phpcrm-dropdown-hover.phpcrm-mobile,.phpcrm-dropdown-click.phpcrm-mobile{text-align:center}
+.phpcrm-dropdown-hover.phpcrm-mobile,.phpcrm-dropdown-hover.phpcrm-mobile .phpcrm-btn,.phpcrm-dropdown-hover.phpcrm-mobile .phpcrm-button,.phpcrm-dropdown-click.phpcrm-mobile,.phpcrm-dropdown-click.phpcrm-mobile .phpcrm-btn,.phpcrm-dropdown-click.phpcrm-mobile .phpcrm-button{width:100%}}
+@media (max-width:768px){.phpcrm-modal-content{width:500px}.phpcrm-modal{padding-top:50px}}
+@media (min-width:993px){.phpcrm-modal-content{width:900px}.phpcrm-hide-large{display:none!important}.phpcrm-sidebar.phpcrm-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.phpcrm-hide-medium{display:none!important}}
+@media (max-width:992px){.phpcrm-sidebar.phpcrm-collapse{display:none}.phpcrm-main{margin-left:0!important;margin-right:0!important}.phpcrm-auto{max-width:100%}}
+.phpcrm-top,.phpcrm-bottom{position:fixed;width:100%;z-index:1}.phpcrm-top{top:0}.phpcrm-bottom{bottom:0}
+.phpcrm-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.phpcrm-display-topleft{position:absolute;left:0;top:0}.phpcrm-display-topright{position:absolute;right:0;top:0}
+.phpcrm-display-bottomleft{position:absolute;left:0;bottom:0}.phpcrm-display-bottomright{position:absolute;right:0;bottom:0}
+.phpcrm-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.phpcrm-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.phpcrm-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.phpcrm-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.phpcrm-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.phpcrm-display-container:hover .phpcrm-display-hover{display:block}.phpcrm-display-container:hover span.phpcrm-display-hover{display:inline-block}.phpcrm-display-hover{display:none}
+.phpcrm-display-position{position:absolute}
+.phpcrm-circle{border-radius:50%}
+.phpcrm-round-small{border-radius:2px}.phpcrm-round,.phpcrm-round-medium{border-radius:4px}.phpcrm-round-large{border-radius:8px}.phpcrm-round-xlarge{border-radius:16px}.phpcrm-round-xxlarge{border-radius:32px}
+.phpcrm-row-padding,.phpcrm-row-padding>.phpcrm-half,.phpcrm-row-padding>.phpcrm-third,.phpcrm-row-padding>.phpcrm-twothird,.phpcrm-row-padding>.phpcrm-threequarter,.phpcrm-row-padding>.phpcrm-quarter,.phpcrm-row-padding>.phpcrm-col{padding:0 8px}
+.phpcrm-container,.phpcrm-panel{padding:0.01em 10px}.phpcrm-panel{margin-top:10px;margin-bottom:10px}
+.phpcrm-code,.phpcrm-codespan{font-family:Consolas,"courier new";font-size:16px}
+.phpcrm-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.phpcrm-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.phpcrm-card,.phpcrm-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.phpcrm-card-4,.phpcrm-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.phpcrm-spin{animation:phpcrm-spin 2s infinite linear}@keyframes phpcrm-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.phpcrm-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.phpcrm-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.phpcrm-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.phpcrm-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.phpcrm-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.phpcrm-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.phpcrm-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.phpcrm-animate-input{transition:width 0.4s ease-in-out}.phpcrm-animate-input:focus{width:100%!important}
+.phpcrm-opacity,.phpcrm-hover-opacity:hover{opacity:1}.phpcrm-opacity-off,.phpcrm-hover-opacity-off:hover{opacity:.8}
+.phpcrm-opacity-max{opacity:0.25}.phpcrm-opacity-min{opacity:1}
+.phpcrm-greyscale-max,.phpcrm-grayscale-max,.phpcrm-hover-greyscale:hover,.phpcrm-hover-grayscale:hover{filter:grayscale(100%)}
+.phpcrm-greyscale,.phpcrm-grayscale{filter:grayscale(75%)}.phpcrm-greyscale-min,.phpcrm-grayscale-min{filter:grayscale(50%)}
+.phpcrm-sepia{filter:sepia(75%)}.phpcrm-sepia-max,.phpcrm-hover-sepia:hover{filter:sepia(100%)}.phpcrm-sepia-min{filter:sepia(50%)}
+.phpcrm-tiny{font-size:10px!important}.phpcrm-small{font-size:12px!important}.phpcrm-medium{font-size:15px!important}.phpcrm-large{font-size:18px!important}
+.phpcrm-xlarge{font-size:24px!important}.phpcrm-xxlarge{font-size:36px!important}.phpcrm-xxxlarge{font-size:48px!important}.phpcrm-jumbo{font-size:64px!important}
+.phpcrm-left-align{text-align:left!important}.phpcrm-right-align{text-align:right!important}.phpcrm-justify{text-align:justify!important}.phpcrm-center{text-align:center!important}
+.phpcrm-border-0{border:0!important}.phpcrm-border{border:1px solid #ccc!important}
+.phpcrm-border-top{border-top:1px solid #ccc!important}.phpcrm-border-bottom{border-bottom:1px solid #ccc!important}
+.phpcrm-border-left{border-left:1px solid #ccc!important}.phpcrm-border-right{border-right:1px solid #ccc!important}
+.phpcrm-topbar{border-top:6px solid #ccc!important}.phpcrm-bottombar{border-bottom:6px solid #ccc!important}
+.phpcrm-leftbar{border-left:6px solid #ccc!important}.phpcrm-rightbar{border-right:6px solid #ccc!important}
+.phpcrm-section,.phpcrm-code{margin-top:16px!important;margin-bottom:16px!important}
+.phpcrm-margin{margin:16px!important}.phpcrm-margin-top{margin-top:16px!important}.phpcrm-margin-bottom{margin-bottom:16px!important}
+.phpcrm-margin-left{margin-left:16px!important}.phpcrm-margin-right{margin-right:16px!important}
+.phpcrm-padding-small{padding:4px 8px!important}.phpcrm-padding{padding:8px 16px!important}.phpcrm-padding-large{padding:12px 24px!important}
+.phpcrm-padding-16{padding-top:16px!important;padding-bottom:16px!important}.phpcrm-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+
+.phpcrm-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.phpcrm-padding-top-64{padding-top:64px!important}.phpcrm-padding-top-48{padding-top:48px!important}
+.phpcrm-padding-top-32{padding-top:32px!important}.phpcrm-padding-top-24{padding-top:24px!important}
+.phpcrm-left{float:left!important}.phpcrm-right{float:right!important}
+.phpcrm-button:hover{color:#000!important;background-color:#ccc!important}
+.phpcrm-transparent,.phpcrm-hover-none:hover{background-color:transparent!important}
+.phpcrm-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.phpcrm-amber,.phpcrm-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.phpcrm-aqua,.phpcrm-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.phpcrm-blue,.phpcrm-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.phpcrm-light-blue,.phpcrm-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.phpcrm-brown,.phpcrm-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.phpcrm-cyan,.phpcrm-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.phpcrm-blue-grey,.phpcrm-hover-blue-grey:hover,.phpcrm-blue-gray,.phpcrm-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.phpcrm-green,.phpcrm-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.phpcrm-light-green,.phpcrm-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.phpcrm-indigo,.phpcrm-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.phpcrm-khaki,.phpcrm-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.phpcrm-lime,.phpcrm-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.phpcrm-orange,.phpcrm-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.phpcrm-deep-orange,.phpcrm-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.phpcrm-pink,.phpcrm-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.phpcrm-purple,.phpcrm-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.phpcrm-deep-purple,.phpcrm-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.phpcrm-red,.phpcrm-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.phpcrm-sand,.phpcrm-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.phpcrm-teal,.phpcrm-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.phpcrm-yellow,.phpcrm-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.phpcrm-white,.phpcrm-hover-white:hover{color:#000!important;background-color:#fff!important}
+.phpcrm-black,.phpcrm-hover-black:hover{color:#fff!important;background-color:#000!important}
+.phpcrm-grey,.phpcrm-hover-grey:hover,.phpcrm-gray,.phpcrm-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.phpcrm-light-grey,.phpcrm-hover-light-grey:hover,.phpcrm-light-gray,.phpcrm-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.phpcrm-dark-grey,.phpcrm-hover-dark-grey:hover,.phpcrm-dark-gray,.phpcrm-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.phpcrm-pale-red,.phpcrm-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.phpcrm-pale-green,.phpcrm-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.phpcrm-pale-yellow,.phpcrm-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.phpcrm-pale-blue,.phpcrm-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.phpcrm-text-amber,.phpcrm-hover-text-amber:hover{color:#ffc107!important}
+.phpcrm-text-aqua,.phpcrm-hover-text-aqua:hover{color:#00ffff!important}
+.phpcrm-text-blue,.phpcrm-hover-text-blue:hover{color:#2196F3!important}
+.phpcrm-text-light-blue,.phpcrm-hover-text-light-blue:hover{color:#87CEEB!important}
+.phpcrm-text-brown,.phpcrm-hover-text-brown:hover{color:#795548!important}
+.phpcrm-text-cyan,.phpcrm-hover-text-cyan:hover{color:#00bcd4!important}
+.phpcrm-text-blue-grey,.phpcrm-hover-text-blue-grey:hover,.phpcrm-text-blue-gray,.phpcrm-hover-text-blue-gray:hover{color:#607d8b!important}
+.phpcrm-text-green,.phpcrm-hover-text-green:hover{color:#4CAF50!important}
+.phpcrm-text-light-green,.phpcrm-hover-text-light-green:hover{color:#8bc34a!important}
+.phpcrm-text-indigo,.phpcrm-hover-text-indigo:hover{color:#3f51b5!important}
+.phpcrm-text-khaki,.phpcrm-hover-text-khaki:hover{color:#b4aa50!important}
+.phpcrm-text-lime,.phpcrm-hover-text-lime:hover{color:#cddc39!important}
+.phpcrm-text-orange,.phpcrm-hover-text-orange:hover{color:#ff9800!important}
+.phpcrm-text-deep-orange,.phpcrm-hover-text-deep-orange:hover{color:#ff5722!important}
+.phpcrm-text-pink,.phpcrm-hover-text-pink:hover{color:#e91e63!important}
+.phpcrm-text-purple,.phpcrm-hover-text-purple:hover{color:#9c27b0!important}
+.phpcrm-text-deep-purple,.phpcrm-hover-text-deep-purple:hover{color:#673ab7!important}
+.phpcrm-text-red,.phpcrm-hover-text-red:hover{color:#f44336!important}
+.phpcrm-text-sand,.phpcrm-hover-text-sand:hover{color:#fdf5e6!important}
+.phpcrm-text-teal,.phpcrm-hover-text-teal:hover{color:#009688!important}
+.phpcrm-text-yellow,.phpcrm-hover-text-yellow:hover{color:#d2be0e!important}
+.phpcrm-text-white,.phpcrm-hover-text-white:hover{color:#fff!important}
+.phpcrm-text-black,.phpcrm-hover-text-black:hover{color:#000!important}
+.phpcrm-text-grey,.phpcrm-hover-text-grey:hover,.phpcrm-text-gray,.phpcrm-hover-text-gray:hover{color:#757575!important}
+.phpcrm-text-light-grey,.phpcrm-hover-text-light-grey:hover,.phpcrm-text-light-gray,.phpcrm-hover-text-light-gray:hover{color:#f1f1f1!important}
+.phpcrm-text-dark-grey,.phpcrm-hover-text-dark-grey:hover,.phpcrm-text-dark-gray,.phpcrm-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.phpcrm-border-amber,.phpcrm-hover-border-amber:hover{border-color:#ffc107!important}
+.phpcrm-border-aqua,.phpcrm-hover-border-aqua:hover{border-color:#00ffff!important}
+.phpcrm-border-blue,.phpcrm-hover-border-blue:hover{border-color:#2196F3!important}
+.phpcrm-border-light-blue,.phpcrm-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.phpcrm-border-brown,.phpcrm-hover-border-brown:hover{border-color:#795548!important}
+.phpcrm-border-cyan,.phpcrm-hover-border-cyan:hover{border-color:#00bcd4!important}
+.phpcrm-border-blue-grey,.phpcrm-hover-border-blue-grey:hover,.phpcrm-border-blue-gray,.phpcrm-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.phpcrm-border-green,.phpcrm-hover-border-green:hover{border-color:#4CAF50!important}
+.phpcrm-border-light-green,.phpcrm-hover-border-light-green:hover{border-color:#8bc34a!important}
+.phpcrm-border-indigo,.phpcrm-hover-border-indigo:hover{border-color:#3f51b5!important}
+.phpcrm-border-khaki,.phpcrm-hover-border-khaki:hover{border-color:#f0e68c!important}
+.phpcrm-border-lime,.phpcrm-hover-border-lime:hover{border-color:#cddc39!important}
+.phpcrm-border-orange,.phpcrm-hover-border-orange:hover{border-color:#ff9800!important}
+.phpcrm-border-deep-orange,.phpcrm-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.phpcrm-border-pink,.phpcrm-hover-border-pink:hover{border-color:#e91e63!important}
+.phpcrm-border-purple,.phpcrm-hover-border-purple:hover{border-color:#9c27b0!important}
+.phpcrm-border-deep-purple,.phpcrm-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.phpcrm-border-red,.phpcrm-hover-border-red:hover{border-color:#f44336!important}
+.phpcrm-border-sand,.phpcrm-hover-border-sand:hover{border-color:#fdf5e6!important}
+.phpcrm-border-teal,.phpcrm-hover-border-teal:hover{border-color:#009688!important}
+.phpcrm-border-yellow,.phpcrm-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.phpcrm-border-white,.phpcrm-hover-border-white:hover{border-color:#fff!important}
+.phpcrm-border-black,.phpcrm-hover-border-black:hover{border-color:#000!important}
+.phpcrm-border-grey,.phpcrm-hover-border-grey:hover,.phpcrm-border-gray,.phpcrm-hover-border-gray:hover{border-color:#9e9e9e!important}
+.phpcrm-border-light-grey,.phpcrm-hover-border-light-grey:hover,.phpcrm-border-light-gray,.phpcrm-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.phpcrm-border-dark-grey,.phpcrm-hover-border-dark-grey:hover,.phpcrm-border-dark-gray,.phpcrm-hover-border-dark-gray:hover{border-color:#616161!important}
+.phpcrm-border-pale-red,.phpcrm-hover-border-pale-red:hover{border-color:#ffe7e7!important}.phpcrm-border-pale-green,.phpcrm-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.phpcrm-border-pale-yellow,.phpcrm-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.phpcrm-border-pale-blue,.phpcrm-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background-color:#fff;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/main.png');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("images/banner1.png");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("images/banner2.png");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("images/banner3.png");
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url("images/main.png");
+  min-height: 400px;
+}
+.phpcrm-wide {letter-spacing: 10px;}
+.phpcrm-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Navbar container */
+.phpcrm-navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.phpcrm-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown-right {
+  float: right;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown-right .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.phpcrm-navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.phpcrm-navbar a:hover, .dropdown-right:hover .dropbtn {
+  background-color: red;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content-right {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:2px;
+}
+/* Links inside the dropdown */
+.dropdown-content-right a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content-right a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-right:hover .dropdown-content-right {
+  display: block;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0 12px 0;
+  position: relative;
+  border-bottom: 2px solid green;
+}
+img.logomodel {
+  width: 100%;
+  border-radius: 50%;
+  max-width:300px;
+}
+.container {
+  padding: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width:500px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 900px) {
+
+  .cancelbtn {
+     width: 100%;
+  }
+#myNavbar {display:none;}  
+}
+
+
